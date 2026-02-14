@@ -2,8 +2,10 @@ backend:
   name: git-gateway
   branch: main # O la rama que uses (master/main)
 
-media_folder: "public/images/uploads" # Donde se guardarán las fotos físicas
-public_folder: "/images/uploads"      # Cómo se verá la ruta en el HTML/Markdown
+locale: 'es'
+
+media_folder: "public/images" # Donde se guardarán las fotos físicas
+public_folder: "/images"      # Cómo se verá la ruta en el HTML/Markdown
 
 collections:
   - name: "noticias"
@@ -15,4 +17,5 @@ collections:
       - { label: "Título de la Noticia", name: "title", widget: "string" }
       - { label: "Fecha de Publicación", name: "date", widget: "datetime" }
       - { label: "Imagen Principal", name: "image", widget: "image", required: false }
+
       - { label: "Contenido de la Noticia", name: "body", widget: "markdown" }
