@@ -1,21 +1,57 @@
 backend:
   name: git-gateway
-  branch: main # O la rama que uses (master/main)
+  branch: main
 
-locale: 'es'
+locale: "es"
 
-media_folder: "public/images" # Donde se guardarán las fotos físicas
-public_folder: "/images"      # Cómo se verá la ruta en el HTML/Markdown
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
-  - name: "noticias"
-    label: "Noticias y Avisos"
-    folder: "content/noticias" # <--- CAMBIA ESTO por tu carpeta de .md
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Título de la Noticia", name: "title", widget: "string" }
-      - { label: "Fecha de Publicación", name: "date", widget: "datetime" }
-      - { label: "Imagen Principal", name: "image", widget: "image", required: false }
+  - name: "informacion"
+    label: "Información Parroquial"
+    files:
 
-      - { label: "Contenido de la Noticia", name: "body", widget: "markdown" }
+      - label: "Horarios de Misa"
+        name: "misas"
+        file: "content/info/misas.md"
+        fields:
+          - label: "Horarios de misa"
+            name: "horarios"
+            widget: "list"
+            fields:
+              - { label: "Dia", name: "Dia", widget: "string" }
+              - label: "Horarios"
+                name: "Horarios"
+                widget: "list"
+                field: { label: "Hora", name: "hora", widget: "string" }
+
+      - label: "Confesiones"
+        name: "confesiones"
+        file: "content/info/confesiones.md"
+        fields:
+          - label: "Horarios de confesiones"
+            name: "horarios"
+            widget: "list"
+            fields:
+              - { label: "Dia", name: "Dia", widget: "string" }
+              - label: "Horarios"
+                name: "Horarios"
+                widget: "list"
+                field: { label: "Hora", name: "hora", widget: "string" }
+
+      - label: "Secretaría Parroquial"
+        name: "secretaria"
+        file: "content/info/secretaria.md"
+        fields:
+
+          - label: "Horarios de atención"
+            name: "horarios"
+            widget: "list"
+            fields:
+              - { label: "Dia", name: "Dia", widget: "string" }
+              - { label: "Horarios", name: "Horarios", widget: "string" }
+
+          - { label: "Telefono", name: "telefono", widget: "string" }
+
+          - { label: "Numero de WhatsApp (solo numeros con codigo de pais)", name: "whatsapp", widget: "string" }
