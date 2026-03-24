@@ -26,6 +26,10 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   background: linear-gradient(rgba(var(--primary-color), 0.7), rgba(var(--primary-color), 0.7)), url('foto.webp');
   background-size: cover;
   background-position: center;
@@ -133,4 +137,53 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+}
+
+.subcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.back-button {
+  text-decoration: none;
+  color: white; /* Cambia al color que prefieras */
+  /* background-color: white; */
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: flex;
+  height: 4rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+  align-items: center;
+  gap: 5px; /* Espacio entre la flecha y el texto */
+  
+  /* Esto asegura que se quede a la izquierda */
+  margin-right: auto;
+}
+
+.auto-content {
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+
+.data-field {
+  margin: 10px 0;
+}
+
+.label {
+  color: #555;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+
+.auto-content ul {
+  list-style-type: none;
+  padding-left: 15px;
+  border-left: 2px solid #ddd;
+}
+
+.auto-content li {
+  margin: 5px 0;
 }
