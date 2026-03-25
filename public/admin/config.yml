@@ -15,10 +15,6 @@ collections:
         name: "misas"
         file: "content/info/misas.md"
         fields:
-          # - label: "Título"
-          #   name: "title"
-          #   widget: "string"
-          #   default: "Horarios de Misa"
           - label: "Contenido y Horarios"
             name: "body"
             widget: "markdown"
@@ -27,10 +23,6 @@ collections:
         name: "confesiones"
         file: "content/info/confesiones.md"
         fields:
-          - label: "Título"
-            name: "title"
-            widget: "string"
-            default: "Confesiones"
           - label: "Contenido y Horarios"
             name: "body"
             widget: "markdown"
@@ -39,10 +31,6 @@ collections:
         name: "secretaria"
         file: "content/info/secretaria.md"
         fields:
-          - label: "Título"
-            name: "title"
-            widget: "string"
-            default: "Secretaría Parroquial"
           - label: "Información de Contacto y Horarios"
             name: "body"
             widget: "markdown"
