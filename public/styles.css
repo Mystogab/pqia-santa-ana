@@ -147,6 +147,14 @@ body {
   flex: 1;
 }
 
+.subcontext{
+  font-size: 1.4rem;
+}
+
+.subcontext ul {
+  padding-left: 40px;
+}
+
 .back-button {
   text-decoration: none;
   color: white; /* Cambia al color que prefieras */
