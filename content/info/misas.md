@@ -1,7 +1,17 @@
-**Lunes** y **Viernes:**
+De **Lunes** a **Viernes:**
 
-* **20:30** a **21:00 hs**
+* **12:00** HS
 
-**Miércoles:**
+**Miércoles Y Viernes:**
 
-* otra cosa
+* **19:00** HS
+
+**SÁBADOS**:
+
+* **09:30** HS
+* **19:00** HS
+
+**DOMINGOS**:
+
+* **11:00** HS
+* **19:00** HS
