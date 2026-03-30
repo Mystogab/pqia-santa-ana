@@ -38,7 +38,7 @@ function build() {
 
       // 5. Inyectar en el template
       const finalHtml = template
-        .replace(/{{title}}/g, fileName.replace(fileName.at(0), fileName.at(0).toUpperCase()))
+        .replace(/{{title}}/g, fileName.replace(fileName.at(0), fileName.at(0).toUpperCase()).replaceAll('-', ' '))
         .replace(/{{content}}/g, htmlBody);
 
       // 6. Guardar el archivo

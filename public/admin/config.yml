@@ -36,8 +36,8 @@ collections:
             widget: "markdown"
 
       - label: "Semana Santa 2026"
-        name: "ssanta2026"
-        file: "content/info/ssanta2026.md"
+        name: "semana-santa"
+        file: "content/info/semana-santa.md"
         fields:
           - label: "Información Semana Santa 2026"
             name: "body"

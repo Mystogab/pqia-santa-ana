@@ -145,6 +145,7 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
+  padding: clamp(24px, 5vh, 60px) 16px;
 }
 
 .subcontext{
