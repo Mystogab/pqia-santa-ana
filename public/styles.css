@@ -11,8 +11,8 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  font-size: 19px;
   color: #111;
   background: #f5f5f5;
   line-height: 1.5;
@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(rgba(var(--primary-color), 0.7), rgba(var(--primary-color), 0.7)), url('foto.webp');
+  background: linear-gradient(rgba(var(--primary-color), 0.7), rgba(var(--primary-color), 0.7)), url('pqia.webp');
   background-size: cover;
   background-position: center;
   color: white;
@@ -195,4 +195,8 @@ body {
 
 .auto-content li {
   margin: 5px 0;
+}
+
+.card-double {
+  grid-column: span 2;
 }

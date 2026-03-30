@@ -34,3 +34,11 @@ collections:
           - label: "Información de Contacto y Horarios"
             name: "body"
             widget: "markdown"
+
+      - label: "Semana Santa 2026"
+        name: "ssanta2026"
+        file: "content/info/ssanta2026.md"
+        fields:
+          - label: "Información Semana Santa 2026"
+            name: "body"
+            widget: "markdown"
